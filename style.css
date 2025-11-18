@@ -1,0 +1,244 @@
+/* General Reset */
+body {
+  font-family: 'Arial Black', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background: #000;
+  padding: 15px;
+  border-bottom: 4px solid #e10600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e10600;
+}
+
+/* Sections */
+section {
+  display: none;
+  padding: 40px 20px;
+}
+
+section.active {
+  display: block;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  color: #e10600;
+}
+
+/* Featured Products */
+.featured h2 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+#featured-products {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+}
+
+#featured-products .product-card {
+  flex: 0 0 auto;
+  background: #fff;
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  width: 150px;
+  text-align: center;
+}
+
+#featured-products .product-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+#featured-products .product-card h3 {
+  font-size: 0.9em;
+  color: #111;
+}
+
+/* Products page */
+.categories {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categories button {
+  margin: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background: #e10600;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.categories button:hover {
+  background: #111;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+}
+
+#product-list .product-card {
+  flex: 0 0 auto;
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#product-list .product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#product-list .product-card:hover {
+  transform: scale(1.05);
+  border-color: #e10600;
+}
+
+#product-list .product-card h3 {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+#product-list .product-card p {
+  margin: 5px 0;
+  color: #111;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 40px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #e10600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.product-card button:hover {
+  background: #111;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #e10600;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background: #111;
+}
+
+/* About Us */
+.about-tab {
+  text-align: center;
+  padding: 30px;
+  background: #eee;
+  border-left: 5px solid #e10600;
+  border-right: 5px solid #e10600;
+}
+
+.about-tab p {
+  font-size: 1.2em;
+  color: #111;
+}
+
+.about-bg {
+  height: 200px;
+  background: grey;
+  margin-top: 20px;
+}
